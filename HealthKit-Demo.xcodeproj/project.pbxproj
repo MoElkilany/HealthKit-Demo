@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5E35E527030DD800D36798 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5E35E427030DD800D36798 /* HealthKit.framework */; };
+		0A5E35E72703123D00D36798 /* HealthSetupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E35E62703123D00D36798 /* HealthSetupHelper.swift */; };
 		0AA108A127030B3B00F2584B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA108A027030B3B00F2584B /* AppDelegate.swift */; };
-		0AA108A327030B3B00F2584B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA108A227030B3B00F2584B /* SceneDelegate.swift */; };
 		0AA108A527030B3B00F2584B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA108A427030B3B00F2584B /* ViewController.swift */; };
-		0AA108A827030B3B00F2584B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA108A627030B3B00F2584B /* Main.storyboard */; };
 		0AA108AA27030B3B00F2584B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA108A927030B3B00F2584B /* Assets.xcassets */; };
 		0AA108AD27030B3B00F2584B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA108AB27030B3B00F2584B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A5E35E227030DD800D36798 /* HealthKit-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthKit-Demo.entitlements"; sourceTree = "<group>"; };
+		0A5E35E427030DD800D36798 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0A5E35E62703123D00D36798 /* HealthSetupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSetupHelper.swift; sourceTree = "<group>"; };
 		0AA1089D27030B3B00F2584B /* HealthKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA108A027030B3B00F2584B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AA108A227030B3B00F2584B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0AA108A427030B3B00F2584B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AA108A727030B3B00F2584B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AA108A927030B3B00F2584B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA108AC27030B3B00F2584B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA108AE27030B3B00F2584B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +32,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5E35E527030DD800D36798 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A5E35E327030DD800D36798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A5E35E427030DD800D36798 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0AA1089427030B3B00F2584B = {
 			isa = PBXGroup;
 			children = (
 				0AA1089F27030B3B00F2584B /* HealthKit-Demo */,
 				0AA1089E27030B3B00F2584B /* Products */,
+				0A5E35E327030DD800D36798 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,47 @@
 		0AA1089F27030B3B00F2584B /* HealthKit-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0AA108A027030B3B00F2584B /* AppDelegate.swift */,
-				0AA108A227030B3B00F2584B /* SceneDelegate.swift */,
-				0AA108A427030B3B00F2584B /* ViewController.swift */,
-				0AA108A627030B3B00F2584B /* Main.storyboard */,
-				0AA108A927030B3B00F2584B /* Assets.xcassets */,
-				0AA108AB27030B3B00F2584B /* LaunchScreen.storyboard */,
-				0AA108AE27030B3B00F2584B /* Info.plist */,
+				0A5E35E227030DD800D36798 /* HealthKit-Demo.entitlements */,
+				0AA108B727030C1600F2584B /* Scences */,
+				0AA108B627030C0600F2584B /* Boards */,
+				0AA108B527030BF800F2584B /* Resource */,
+				0AA108B427030BEC00F2584B /* Core */,
 			);
 			path = "HealthKit-Demo";
+			sourceTree = "<group>";
+		};
+		0AA108B427030BEC00F2584B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0AA108AE27030B3B00F2584B /* Info.plist */,
+				0AA108A027030B3B00F2584B /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0AA108B527030BF800F2584B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0AA108A927030B3B00F2584B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0AA108B627030C0600F2584B /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				0AA108AB27030B3B00F2584B /* LaunchScreen.storyboard */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
+		0AA108B727030C1600F2584B /* Scences */ = {
+			isa = PBXGroup;
+			children = (
+				0AA108A427030B3B00F2584B /* ViewController.swift */,
+				0A5E35E62703123D00D36798 /* HealthSetupHelper.swift */,
+			);
+			path = Scences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +169,6 @@
 			files = (
 				0AA108AD27030B3B00F2584B /* LaunchScreen.storyboard in Resources */,
 				0AA108AA27030B3B00F2584B /* Assets.xcassets in Resources */,
-				0AA108A827030B3B00F2584B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5E35E72703123D00D36798 /* HealthSetupHelper.swift in Sources */,
 				0AA108A527030B3B00F2584B /* ViewController.swift in Sources */,
 				0AA108A127030B3B00F2584B /* AppDelegate.swift in Sources */,
-				0AA108A327030B3B00F2584B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0AA108A627030B3B00F2584B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AA108A727030B3B00F2584B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0AA108AB27030B3B00F2584B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,9 +320,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthKit-Demo/HealthKit-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZUMG9R88LL;
-				INFOPLIST_FILE = "HealthKit-Demo/Info.plist";
+				DEVELOPMENT_TEAM = 379LRDK82K;
+				INFOPLIST_FILE = "$(SRCROOT)/HealthKit-Demo/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HealthKit-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,9 +341,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthKit-Demo/HealthKit-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZUMG9R88LL;
-				INFOPLIST_FILE = "HealthKit-Demo/Info.plist";
+				DEVELOPMENT_TEAM = 379LRDK82K;
+				INFOPLIST_FILE = "$(SRCROOT)/HealthKit-Demo/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HealthKit-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
