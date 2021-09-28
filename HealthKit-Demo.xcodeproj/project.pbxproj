@@ -10,7 +10,6 @@
 		0A5E35E527030DD800D36798 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5E35E427030DD800D36798 /* HealthKit.framework */; };
 		0A5E35E72703123D00D36798 /* HealthSetupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E35E62703123D00D36798 /* HealthSetupHelper.swift */; };
 		0AA108A127030B3B00F2584B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA108A027030B3B00F2584B /* AppDelegate.swift */; };
-		0AA108A527030B3B00F2584B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA108A427030B3B00F2584B /* ViewController.swift */; };
 		0AA108AA27030B3B00F2584B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA108A927030B3B00F2584B /* Assets.xcassets */; };
 		0AA108AD27030B3B00F2584B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA108AB27030B3B00F2584B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -21,7 +20,6 @@
 		0A5E35E62703123D00D36798 /* HealthSetupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSetupHelper.swift; sourceTree = "<group>"; };
 		0AA1089D27030B3B00F2584B /* HealthKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA108A027030B3B00F2584B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AA108A427030B3B00F2584B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AA108A927030B3B00F2584B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA108AC27030B3B00F2584B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA108AE27030B3B00F2584B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		0AA108B727030C1600F2584B /* Scences */ = {
 			isa = PBXGroup;
 			children = (
-				0AA108A427030B3B00F2584B /* ViewController.swift */,
 				0A5E35E62703123D00D36798 /* HealthSetupHelper.swift */,
 			);
 			path = Scences;
@@ -180,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5E35E72703123D00D36798 /* HealthSetupHelper.swift in Sources */,
-				0AA108A527030B3B00F2584B /* ViewController.swift in Sources */,
 				0AA108A127030B3B00F2584B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

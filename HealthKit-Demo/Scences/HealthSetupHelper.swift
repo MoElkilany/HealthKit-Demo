@@ -23,5 +23,22 @@ class HealthSetupHelper {
             completion(false,HealthkitSetupError.dataTypeNotAvailable)
             return
         }
+        
+        let healthKitTypesToWrite: Set<HKSampleType> = [bodyMassIndex,
+                                                        activeEnergy,
+                                                        HKObjectType.workoutType()]
+            
+        let healthKitTypesToRead: Set<HKObjectType> = [dateOfBirth,
+                                                       bloodType,
+                                                       biologicalSex,
+                                                       bodyMassIndex,
+                                                       height,
+                                                       bodyMass,
+                                                       HKObjectType.workoutType()]
+        
+        HKHealthStore().requestAuthorization(toShare: healthKitTypesToWrite, read: healthKitTypesToRead) { (sucess , error) in
+            completion(sucess,error)
+        }
+        
     }
 }
