@@ -19,6 +19,9 @@ class HealthSetupHelper {
             completion(false,HealthkitSetupError.notAvailableOnDevice)
             return
         }
+        guard let dateOfBirth = HKObjectType.characteristicType(forIdentifier: .dateOfBirth) ,let bloodType = HKObjectType.characteristicType(forIdentifier: .bloodType) , let biologicalSex = HKObjectType.characteristicType(forIdentifier: .biologicalSex), let bodyMassIndex = HKObjectType.quantityType(forIdentifier: .bodyMassIndex) ,let height = HKObjectType.quantityType(forIdentifier: .height), let bodyMass = HKObjectType.quantityType(forIdentifier: .bodyMass) ,let activeEnergy = HKObjectType.quantityType(forIdentifier: .activeEnergyBurned) else {
+            completion(false,HealthkitSetupError.dataTypeNotAvailable)
+            return
+        }
     }
-    
 }
